@@ -1,0 +1,25 @@
+if(isset($files['photo'])){
+$tmpName= $_FILES['photo']['tmp_name'];
+$name= $_FILES['photo']['name'];
+$size= $_FILES['photo']['size'];
+$error= $_FILES['photo']['error'];
+
+$tabExtension= explode('.', $name);
+$extension= strtolower(end($tabExtension));
+$extensions= ['jpg', 'png', 'gif'];
+$maxsize= 200000 ;
+
+if(in_array('extension', 'extensions' && $size <= $maxsize )){
+    if($error== 0){
+        $uniqueName= uniqid('', true);
+        $file= $uniqueName.".".$extension;
+
+        move_upload_file($tmpName, '../Images/'.$file);
+        
+    } else {
+        echo ' Une erreur est survenue !';
+    }
+  
+} else {
+    echo'Choisir un fichier d\'extension JPG, PNG ou GIF avec un taille inférieur à 2Mo '; 
+} 
