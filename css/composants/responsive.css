@@ -161,13 +161,22 @@
 @media (max-width:1091px) {
     .forms{
         width: 460px;
+        
 
     }
 }
 
 @media (max-width:992px) {
     .forms{
-       width: 550px;
+       
+       margin: 25px auto 25px auto ;
+
+    }
+}
+
+@media (max-width:530px) {
+    .forms{
+       width: 300px;
        margin: 25px auto 25px auto ;
 
     }

@@ -99,16 +99,16 @@
 
 
 /* .navverticale a.active, */ /* essayer d'éclairer la rubrique lorsqu'on se trouve sur la page */
-.navverticale a:hover {
+/* .navverticale a:hover {
     color: rgb(211, 169, 119);
-}
+} */
 
 
-.navverticale a {
+/* .navverticale a {
   color: rgb(225, 207, 186);
   display: block;
   font-size: 16px;
-}
+} */
 
 
 

@@ -106,6 +106,15 @@ font-size: 25px;
       
 }
 
+.btn-nav{
+    color: rgb(225, 207, 186);
+    display: block;
+    font-size: 16px;
+}
+
+.btn-nav:hover{
+    color: rgb(211, 169, 119);
+}
 
 
 
@@ -156,7 +165,9 @@ font-size: 25px;
     border: 1px solid var(--main-bg-color);
     background-color: white;
     margin-left: 10px;
-    
+    padding: 5px;
+    font-size: 20px;
+    color: var(--main-bg-color);
 
 }
 
