@@ -132,8 +132,16 @@ require '../BDD/image.php';
 
                 <?php 
                     // Sélectionner toutes les publications ou la valeur dans la colonne user_id est égale à la valeur stocké dans $_SESSION['id']
-                    $db= $database->prepare('SELECT * FROM publication WHERE user_id= :id ORDER BY creation DESC'); // on récupère l'id et on lui attribut un placeholder
-                    $db->execute(['id'=> $_SESSION['id']]); //
+
+                    if(isset($_GET['pseudo'])) {
+                        $db= $database->prepare('SELECT * FROM publication INNER JOIN inscription ON publication.user_id = inscription.id WHERE inscription.Pseudo = :pseudo ORDER BY publication.creation DESC');
+                        $db->execute(['pseudo'=> $_GET['pseudo']]); //
+                    } else {
+                        $db= $database->prepare('SELECT * FROM publication WHERE user_id= :id ORDER BY creation DESC'); // on récupère l'id et on lui attribut un placeholder
+                        $db->execute(['id'=> $_SESSION['id']]); //
+                    }
+
+                    
                     $bases= $db->fetchAll();
   
                     foreach($bases as $base){
@@ -169,11 +177,11 @@ require '../BDD/image.php';
                          <span class="text-publication">
                       
                           '.$base['type'].' <br>';
-                          if(isset($base['images'])){
+                          if($base['images']!= null){
                             echo '<img alt="image postée par l\'utilisateur" class="img-pub" src= "'.$base['images'].'">';
                             
                           } else { 
-                             echo '<img alt="image postée par l\'utilisateur" style= "display : none" class="img-pub" src= "'.$base['images'].'">'; 
+                             echo '<img alt="image postée par l\'utilisateur" style= "display : none" class="img-pub" src= "noimage">'; 
                             }
                             
                           echo ' <br> 

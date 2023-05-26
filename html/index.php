@@ -48,9 +48,9 @@ ON publication.nom = inscription.user_id ORDER BY creation DESC' );
           <div class="modal-suppression">
               <p class="publications" >Voulez-vous vraiment suppprimer ce poste ? </p>
               <div class="les-boutons">
-                  <a href='../BDD/delete.php?id=<?php echo $publication["id"]; ?>'>
-                   <button type="submit" class="confirmer">Confirmer</button>
-                  </a>
+                  
+                   <button type="submit" class="confirmer" onclick="window.location.href = '../BDD/delete.php?id=<?php echo $publication['id'];?>';" >Confirmer</button>
+                  
                   <button class="annuler">Annuler</button>
               </div>
           </div>
@@ -61,9 +61,7 @@ ON publication.nom = inscription.user_id ORDER BY creation DESC' );
   <?php
 
     if(isset($_SESSION['pseudo'])){
-
-   
-    
+ 
    } else {
 
     require '../donneesphp/inscritoi.php';
@@ -78,7 +76,7 @@ ON publication.nom = inscription.user_id ORDER BY creation DESC' );
     
     
     
-    <section class="ma-page"> <!-- section contenant deux grands blocs: la navbar et la page-->
+    <div class="ma-page"> <!-- section contenant deux grands blocs: la navbar et la page-->
         
       <?php require '../donneesphp/navbar.template.php'; ?>
     
@@ -106,6 +104,8 @@ ON publication.nom = inscription.user_id ORDER BY creation DESC' );
        
             
           }
+
+        
           
           ?>   
           <?php   
@@ -155,11 +155,11 @@ ON publication.nom = inscription.user_id ORDER BY creation DESC' );
              <span class="text-publication">
           
               '.$publication['type'].' <br>';
-              if(isset($publication['images'])){
-                echo '<img alt="image postée par l\'utilisateur" class="img-pub" src= "'.$publication['images'].'">';
+              if($publication['images'] != null){
+                echo '<img alt="image" class="img-pub" src= "'.$publication['images'].'">';
                 
               } else { 
-                 echo '<img alt="image postée par l\'utilisateur" style= "display : none" class="img-pub" src= "'.$publication['images'].'">'; 
+                 echo ' <img alt="image" style="display: none;" class="img-pub" src= "Noimage">'; 
                 }
                 
               echo ' <br>'; 
@@ -202,7 +202,7 @@ ON publication.nom = inscription.user_id ORDER BY creation DESC' );
        
         </div>
         
-    </section>
+    </div>
 
    
     
