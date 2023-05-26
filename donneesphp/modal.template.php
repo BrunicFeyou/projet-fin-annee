@@ -1,7 +1,7 @@
 <form action="../BDD/publication.php" method="POST" enctype="multipart/form-data">
     <input type="hidden" name='form' value="addpublication">
     <div class="fond"> <!-- le modal de poste qui apparait lorsqu'on click sur le bouton de la popup -->
-        <div class="close"> <!-- La croix pour fermer le modal -->
+        <div class="close"> 
             <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="poste"> <!-- le modal -->
