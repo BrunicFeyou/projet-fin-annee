@@ -1,0 +1,265 @@
+
+
+.la-descri-typetion {
+ width: 50%;
+ margin-top: 40px;
+}
+.la-photo-profil {
+    padding:  5px;
+}
+
+
+.btn-partager {
+    margin-left: 85%;
+    margin-top: 10px;
+}
+
+.elements-poste {
+    /* margin: 50px; */
+   
+
+    margin-bottom: 0px;
+    margin-left: 10px;
+
+}
+
+.identification-carte {
+    padding-left: 5px;
+    display: flex;
+}
+.id-utilisateur {
+    margin: 15px;
+    font-size: 17px;
+}
+
+.icone-poubelle {
+margin-left: auto;
+padding-right: 5px;
+
+}
+
+.date-publication {
+    margin-left: 15px;
+    color: gray;
+    font-size: 15px;
+}
+
+.photo-publication {
+    
+}
+
+.les-trois-boutons{
+ display: flex;
+ gap: 10px;
+ margin-left: 5px;
+ 
+}
+
+.btn-inscription {
+    margin-top: 40px;
+    margin-left: 227px;
+    
+
+}
+.les-inputs{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.name-setting{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+
+}
+
+.name-profil{
+    grid-column: 1fr;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.stroke{
+    grid-column: 1fr;
+    padding-left: 90%;
+    
+}
+
+.image-profil-grand-espace{
+    display: flex;
+    
+}
+
+.image-profil-petit-espace{
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.all-infos{
+    width: 100%;
+    margin-top: 25px;
+}
+.infos-utilisateur{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    
+   
+}
+
+.publication {
+   grid-column: 1fr; 
+}
+
+.followers{
+  grid-column: 1fr; 
+}
+
+.follow{
+grid-column: 1fr; 
+}
+
+.tag{
+ grid-column: 1fr;    
+}
+
+.vide{
+    width: 100%;
+    height: 20px;
+}
+
+.btn-modifier{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 30px;
+}
+
+.btn-modfier-profil{
+    margin: auto;
+    
+}
+
+/* .description-profil{
+   
+} */
+.mot-inscription{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.donnee-inscription{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+
+.btn-de-linscription {
+   width: 100%;
+   display: block;
+   margin: auto;
+   margin-bottom: 30px;
+}
+
+.modal-suppression{
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 250px;
+
+}
+
+.les-boutons{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 190px;
+    width: 110px;
+    height: 20px;
+ 
+   
+}
+
+.les-tags{
+ /* width: 100%; */
+ height: auto;
+ margin-left: 30px;
+ margin-top: 15px;
+    
+}
+
+.les-btn-tags{
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* width: 100%; */
+margin: auto;
+
+}
+
+.vide-div{
+
+border-top: 1px solid black;
+margin-top: 5px;
+    
+}
+
+.modal-inscription{
+    border: 1px solid var(--main-bg-color);
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    margin: 250px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.option-inscription{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+.option-connexion{
+    display: flex;
+    flex-direction: column;
+}
+
+.close i {
+    z-index: -3;
+}
+
+
+/* #border-connexion{
+    border: 1px solid var(--main-bg-color);
+    justify-self: center;
+    margin-top: auto;
+    height: 100%;
+} */
+
+.un{
+height: 100%;
+margin: auto;
+}
+
+.btn-ins{
+    color: var(--main-bg-color);
+    margin-bottom: 25px;
+}
+
+

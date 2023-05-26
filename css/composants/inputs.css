@@ -1,0 +1,15 @@
+.input-group-text{
+    /* background-color:  var(--main-bh-color); */
+}
+
+#textspace{
+    border: none;
+    border-style: none;
+    width: 300px;
+    height: 40px;
+    overflow: visible;
+    white-space: normal;
+    margin-left: 20px;
+    font-size: 20px;
+}
+

@@ -1,0 +1,156 @@
+.la-nav-bar {
+    /* margin-top: 100px; */
+    /* flex-direction: column; */
+    position: relative;
+    /* z-index: -3; */
+    
+    
+}
+
+.la-nav-bar2{
+    transition: all 1s ease-in-out;
+    position: fixed;
+    top: 5px;
+    left: 0px;
+    z-index: 2;
+     
+}
+
+
+
+
+
+.navbar-vertical {
+    width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: grid;
+    flex-direction: column;
+    background-color: rgb(122, 87, 44);
+
+}
+
+.navbar-vertical2 {
+    width: 200px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    /* display: grid; */
+    flex-direction: column;
+    background-color: rgb(122, 87, 44);
+    border-radius: 0px 25px 25px 0px;
+    transition: all 1s ease-in-out;
+    display: none;
+  /*   align-items: center; */
+    
+
+}
+
+.navbar-vertical2.hide {
+    animation-name: glissement;
+    animation-duration: .5s;
+    display: grid;
+}
+
+@keyframes glissement {
+    from {
+       
+        width: 0%;
+    }
+     to{
+        
+        width: 100%;
+     }
+}
+
+
+
+
+
+
+/* .navbar-vertical2.hide{
+    display: block;
+} */
+.navverticale {
+    /* width: 150px;
+    height: 400px ;*/
+    list-style-type: none;
+    /* gap: 20px; */
+    padding-top: 10px;
+    margin-top: 100px;
+    /* margin-right: 35px; */
+
+    
+}
+
+.navverticale li {
+    width: 100%;
+    padding: 30px;
+    /* font-family: 'Playfair Display', serif; */
+    /* border-top: 1px solid  rgb(94, 66, 33); */
+    border-bottom: 1px solid  rgb(94, 66, 33);
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Playfair Display', serif;
+    border-radius: 30px;
+
+}
+
+
+
+/* .navverticale a.active, */ /* essayer d'éclairer la rubrique lorsqu'on se trouve sur la page */
+.navverticale a:hover {
+    color: rgb(211, 169, 119);
+}
+
+
+.navverticale a {
+  color: rgb(225, 207, 186);
+  display: block;
+  font-size: 16px;
+}
+
+
+
+/* .btn-nav {
+    color: black;
+    
+} */
+
+a {
+   text-decoration: none;
+
+}
+
+.navverticale i {
+    width: 30px ;
+}
+
+.navbar-horizontal{
+    
+    background-color: rgb(255, 228, 196, 0.9);
+    
+    position: sticky;
+    top: 0%;
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    
+    
+   
+}
+
+.navbar-horizontal ul{
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid;
+    justify-content: center;
+    
+}
+.navbar-horizontal ul a {
+    color: black;
+}
+
+

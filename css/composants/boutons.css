@@ -1,0 +1,206 @@
+.partager {
+    background-color: rgb(169, 113, 53);
+    border-radius: 15px; 
+    color: white;
+    font-weight: 550;
+    width: 63px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+    
+}
+
+.btn-img {
+    
+   
+    padding-top: 15px;
+    border-bottom: 1px solid grey;
+    
+
+}
+
+.btn-img li {
+    width: 3%;
+    /* height: 200px; */   
+
+}
+
+.btn-img li i {
+   color:  rgb(122, 87, 44);
+   
+   
+}
+
+.btn-img li i:hover {
+    color:  rgb(90, 59, 21);
+    
+    
+ }
+
+
+
+.jaime {
+color: rgb(122, 87, 44);
+ font-size: 25px;
+
+}
+
+.commentaires {
+ color: rgb(122, 87, 44);
+font-size: 25px;
+}
+
+.envoyer{
+ color: rgb(122, 87, 44) ; 
+ font-size:25px;
+}
+.btn-affichage-commentaires{
+    border-style: none;
+    background-color: white;
+    color: grey; 
+    margin-left:3px ;
+    margin-bottom: 3px;
+}
+
+.btn {
+    
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color: var(--main-bg-color);
+}
+
+#btn-modifier{
+    border-style: none;
+    background: none;  
+}
+
+.btn-modfier-profil button{
+    margin: auto;
+    border-radius: 5px;
+    border-style:var(--main-bg-color) ;
+    
+    
+}
+
+.btn-modfier-profil button:hover{
+    background-color: var(--main-bg-color);
+}
+
+
+.lien-delete{
+    border-style: none;
+    background: none;
+    transform: scale(1);
+    transition: all 1s ;
+   /*  margin-left: 100px; */
+
+}
+
+.lien-delete:hover{
+    transform: scale(1.5);
+}
+
+.lien-delete i {
+    color: rgb(122, 87, 44) ;
+    /* margin-left: 90%; */
+      
+}
+
+
+
+
+
+.confirmer{
+    background-color: var(--main-bg-color);
+    border-radius: 2px;
+    color: white;
+    width: 70px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.annuler{
+    background-color: var(--main-bg-color);
+    border-radius: 2px;
+    color: white;
+    width: 70px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+
+.icone-navbar{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--main-bg-color);
+    z-index: 0;
+}
+
+.btn-tags{
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid var(--main-bg-color);
+    background-color: white;
+    margin-left: 10px;
+    
+
+}
+
+.option-inscription button{
+    width: 100px;
+    height: 30px;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-weight: 550;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0px 1px 8px rgb(175, 174, 174, 0.5);
+    
+    
+}
+
+.option-connexion button{
+    width: 100px;
+    height: 32px;
+    margin: 15px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-weight: 550;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0px 1px 8px rgb(175, 174, 174, 0.5);
+    
+}
+
+.navverticale li button {
+    border-style: none;
+    background-color: transparent;
+}
+
+
+#border-connexion{
+    border: 1px solid var(--main-bg-color);
+    justify-self: center;
+    margin: auto;
+}
+
+
