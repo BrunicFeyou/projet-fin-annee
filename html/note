@@ -1,0 +1,7 @@
+<?php
+$requete = $database->('SELECT * FROM inscription');
+$requete->excute();
+
+$inscriptions= $requete->fetchALL( PDO::FETCH_ASSOC )
+
+?>
